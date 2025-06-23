@@ -9,8 +9,9 @@ import seaborn as sns
 from sklearn.cluster import DBSCAN
 
 import matplotlib
-matplotlib.rc("font", family="Microsoft JhengHei")  # 微軟正黑體
-matplotlib.rcParams["axes.unicode_minus"] = False   # 修正負號亂碼
+matplotlib.rcParams['font.sans-serif'] = ['Taipei Sans TC Beta', 'SimHei', 'Microsoft JhengHei']
+matplotlib.rcParams['axes.unicode_minus'] = False
+
 
 # ------------------ 1. 資料讀取 ------------------
 DATA_PATH = "完整風險評估結果.xlsx"
